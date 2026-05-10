@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "efddb802-6e96-4bdf-aefe-23fe211dcc7f",
+    "name": "School-management-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52093333",
+    "_collection_link": "https://go.postman.co/collection/52093333-efddb802-6e96-4bdf-aefe-23fe211dcc7f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": " https://school-management-api-urg0.onrender.com/addSchool",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"DEF School\",\r\n  \"address\": \"Kanpur\",\r\n  \"latitude\": 26.4499,\r\n  \"longitude\": 80.3319\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://school-management-api-urg0.onrender.com/addSchool",
+          "protocol": "https",
+          "host": [
+            "school-management-api-urg0",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": " https://school-management-api-urg0.onrender.com/listSchools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://school-management-api-urg0.onrender.com/listSchools?latitude=26.4499&longitude=80.3319",
+          "protocol": "https",
+          "host": [
+            "school-management-api-urg0",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "26.4499"
+            },
+            {
+              "key": "longitude",
+              "value": "80.3319"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
